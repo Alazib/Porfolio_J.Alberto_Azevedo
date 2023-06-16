@@ -1,13 +1,7 @@
 {
-	"folders": [
-		{
-			"path": "."
-		},
-		{
-			"path": "../PLANTILLA - Portfolio J.Alberto Azevedo"
-		}
-	],
-	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "Portfolio J.Alberto Azevedo"
-	}
+    "folders": [
+        {
+            "path": "."
+        }
+    ]
 }

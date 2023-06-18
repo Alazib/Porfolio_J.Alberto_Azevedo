@@ -495,10 +495,6 @@ img {
   cursor: pointer;
 }
 
-.qualification__button.qualification__active {
-  color: var(--first-color);
-}
-
 .qualification__button:hover {
   color: var(--first-color);
 }
@@ -553,4 +549,7 @@ img {
 
 .qualification__active[data-content] {
   display: block;
+}
+.qualification__button.qualification__active {
+  color: var(--first-color);
 }

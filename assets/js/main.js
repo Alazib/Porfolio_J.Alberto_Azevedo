@@ -83,3 +83,24 @@ var swiper = new Swiper(".portfolio__container", {
     clickable: true,
   },
 })
+
+/*==================== INTEGRATION WITH EMAILJS SERVICE ====================*/
+const btn = document.getElementById("button")
+
+document.getElementById("form").addEventListener("submit", function (event) {
+  event.preventDefault()
+
+  btn.value = "Sending..."
+
+  const serviceID = "default_service"
+  const templateID = "template_zeon1wk"
+
+  emailjs.sendForm(serviceID, templateID, this).then(
+    () => {
+      alert("Sent!")
+    },
+    (err) => {
+      alert(JSON.stringify(err))
+    }
+  )
+})

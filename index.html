@@ -668,14 +668,23 @@
                     </div>
                     <div class="contact__content">
                         <label for="" class="contact__label">Message</label>
-                        <textarea name="message" id="" cols="30" rows="10" class="contact__input"></textarea>
+                        <textarea name="message" cols="30" rows="6" class="contact__input"></textarea>
+                    </div>
+
+                    <div class="form__notification">
+                        <span class="form__notification-success form__notification-success--hidden">Your
+                            message was sent successfully</span>
+                        <span class="form__notification-error form__notification-error--hidden">Ooops...
+                            an
+                            error has ocurred. Please, try some minutes
+                            later</span>
                     </div>
                     <div>
-                        <!-- <a href="" class="button button--flex">
+                        <button class="button button--flex" id="button" type="submit">
                             Send Message
                             <i class="uil uil-message button__icon"></i>
-                        </a> -->
-                        <input type="submit" id="button">
+                        </button>
+
                     </div>
                 </form>
             </div>
@@ -719,6 +728,8 @@
         </div>
 
     </footer>
+
+
 
 
     <script src="assets/js/swiper-bundle.min.js"></script>

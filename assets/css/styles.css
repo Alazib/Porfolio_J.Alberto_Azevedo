@@ -668,6 +668,47 @@ img {
   padding: 0.25rem 0.5rem 0.5rem 0;
 }
 
+button[type="submit"] {
+  font-family: var(--body-font);
+  border: none;
+  cursor: pointer;
+}
+
+.form__notification {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  font-family: var(--body-font);
+  width: fit-content;
+  margin: auto;
+}
+textarea {
+  resize: none;
+}
+.form__notification-success,
+.form__notification-error {
+  display: flex;
+  text-align: center;
+  background-color: rgb(117, 217, 117);
+  border-radius: 20px;
+  padding: 10px 10px;
+  align-self: center;
+}
+.form__notification-error {
+  background-color: rgb(237, 137, 137);
+}
+
+.form__notification-success--hidden,
+.form__notification-error--hidden {
+  display: none;
+  transition: 2s;
+}
+
+.form__notification-success--show,
+.form__notification-error--show {
+  display: flex;
+}
+
 /*==================== FOOTER ====================*/
 
 .footer {

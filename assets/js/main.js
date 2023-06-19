@@ -86,6 +86,12 @@ var swiper = new Swiper(".portfolio__container", {
 
 /*==================== INTEGRATION WITH EMAILJS SERVICE ====================*/
 const btn = document.getElementById("button")
+const formNotificationSuccess = document.querySelector(
+  ".form__notification-success"
+)
+const formNotificationErrorr = document.querySelector(
+  ".form__notification-error"
+)
 
 document.getElementById("form").addEventListener("submit", function (event) {
   event.preventDefault()
@@ -93,14 +99,26 @@ document.getElementById("form").addEventListener("submit", function (event) {
   btn.value = "Sending..."
 
   const serviceID = "default_service"
-  const templateID = "template_zeon1wk"
+  const templateID = "template_zeon"
 
   emailjs.sendForm(serviceID, templateID, this).then(
     () => {
-      alert("Sent!")
+      formNotificationSuccess.classList.add("form__notification-success--show")
+
+      setTimeout(() => {
+        formNotificationSuccess.classList.remove(
+          "form__notification-success--show"
+        )
+      }, 10000)
     },
     (err) => {
-      alert(JSON.stringify(err))
+      formNotificationErrorr.classList.add("form__notification-error--show")
+
+      setTimeout(() => {
+        formNotificationErrorr.classList.remove(
+          "form__notification-error--show"
+        )
+      }, 10000)
     }
   )
 })

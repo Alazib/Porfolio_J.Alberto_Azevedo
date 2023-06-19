@@ -89,7 +89,7 @@ const btn = document.getElementById("button")
 const formNotificationSuccess = document.querySelector(
   ".form__notification-success"
 )
-const formNotificationErrorr = document.querySelector(
+const formNotificationError = document.querySelector(
   ".form__notification-error"
 )
 
@@ -99,7 +99,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
   btn.value = "Sending..."
 
   const serviceID = "default_service"
-  const templateID = "template_zeon"
+  const templateID = "template_zeon1wk"
 
   emailjs.sendForm(serviceID, templateID, this).then(
     () => {
@@ -112,12 +112,10 @@ document.getElementById("form").addEventListener("submit", function (event) {
       }, 10000)
     },
     (err) => {
-      formNotificationErrorr.classList.add("form__notification-error--show")
+      formNotificationError.classList.add("form__notification-error--show")
 
       setTimeout(() => {
-        formNotificationErrorr.classList.remove(
-          "form__notification-error--show"
-        )
+        formNotificationError.classList.remove("form__notification-error--show")
       }, 10000)
     }
   )

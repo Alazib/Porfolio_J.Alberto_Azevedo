@@ -96,8 +96,6 @@ const formNotificationError = document.querySelector(
 document.getElementById("form").addEventListener("submit", function (event) {
   event.preventDefault()
 
-  btn.value = "Sending..."
-
   const serviceID = "default_service"
   const templateID = "template_zeon1wk"
 
@@ -120,3 +118,30 @@ document.getElementById("form").addEventListener("submit", function (event) {
     }
   )
 })
+
+/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+
+const sections = document.querySelectorAll("section[id]")
+
+function scrollActive() {
+  const scrollY = window.scrollY
+
+  sections.forEach((current) => {
+    const sectionHeight = current.offsetHeight
+    const sectionTop = current.offsetTop - 500
+    const sectionName = current.getAttribute("id")
+    console.log("altura de la sección" + sectionName, sectionTop)
+    console.log(scrollY)
+
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      document
+        .querySelector(".nav__menu a[href*=" + sectionName + "]")
+        .classList.add("active-link")
+    } else {
+      document
+        .querySelector(".nav__menu a[href*=" + sectionName + "]")
+        .classList.remove("active-link")
+    }
+  })
+}
+window.addEventListener("scroll", scrollActive)

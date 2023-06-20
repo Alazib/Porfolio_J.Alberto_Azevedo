@@ -130,8 +130,6 @@ function scrollActive() {
     const sectionHeight = current.offsetHeight
     const sectionTop = current.offsetTop - 500
     const sectionName = current.getAttribute("id")
-    console.log("altura de la sección" + sectionName, sectionTop)
-    console.log(scrollY)
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
       document
@@ -145,3 +143,23 @@ function scrollActive() {
   })
 }
 window.addEventListener("scroll", scrollActive)
+
+/*==================== CHANGE BACKGROUND HEADER ====================*/
+function scrollHeader() {
+  const nav = document.getElementById("header")
+  if (this.scrollY >= 80) {
+    nav.classList.add("scroll-header-shadow")
+  } else nav.classList.remove("scroll-header-shadow")
+}
+window.addEventListener("scroll", scrollHeader)
+
+/*==================== SHOW SCROLL UP ====================*/
+
+function scrollUp() {
+  const scrollUp = document.getElementById("scroll-up")
+  // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+  if (this.scrollY >= 560) scrollUp.classList.add("show-scroll")
+  else scrollUp.classList.remove("show-scroll")
+}
+
+window.addEventListener("scroll", scrollUp)

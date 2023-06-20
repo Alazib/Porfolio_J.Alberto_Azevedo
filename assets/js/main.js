@@ -173,3 +173,8 @@ themeButton.addEventListener("click", () => {
   document.body.classList.toggle(darkTheme)
   themeButton.classList.toggle(iconLightTheme)
 })
+function initWithDarkMode() {
+  document.body.classList.toggle(darkTheme)
+  themeButton.classList.toggle(iconLightTheme)
+}
+initWithDarkMode()

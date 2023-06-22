@@ -484,32 +484,86 @@ img {
 }
 
 .skills__html {
-  width: 90%;
+  width: 100%;
 }
 .skills__css {
-  width: 90%;
+  width: 100%;
 }
 
 .skills__js {
-  width: 90%;
+  width: 100%;
 }
 
 .skills__react {
   width: 70%;
 }
-
-.skills__php {
-  width: 40%;
+.skills__vue {
+  width: 80%;
 }
-
-.skills__node {
+.skills__quasar {
+  width: 80%;
+}
+.skills__typescript {
   width: 50%;
 }
-.skills__firebase {
-  width: 60%;
+.skills__nodejs {
+  width: 50%;
 }
-.skills__python {
-  width: 90%;
+
+.skills__express {
+  width: 50%;
+}
+.skills__mongodb {
+  width: 50%;
+}
+.skills__mongoose {
+  width: 50%;
+}
+
+.skills__cypress {
+  width: 80%;
+}
+.skills__jest {
+  width: 70%;
+}
+.skills__react-testing-library {
+  width: 70%;
+}
+.skills__team-work {
+  width: 100%;
+}
+.skills__learning {
+  width: 100%;
+}
+.skills__learning2 {
+  width: 100%;
+}
+.skills__self-improvement {
+  width: 100%;
+}
+.skills__self-improvement {
+  width: 100%;
+}
+.skills__listening {
+  width: 100%;
+}
+.skills__git {
+  width: 100%;
+}
+.skills__github {
+  width: 100%;
+}
+.skills__bitbucket {
+  width: 100%;
+}
+.skills__agile {
+  width: 80%;
+}
+.skills__uml {
+  width: 50%;
+}
+.skills__storybook {
+  width: 50%;
 }
 
 .skills__close .skills__list {

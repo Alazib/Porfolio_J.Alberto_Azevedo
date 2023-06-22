@@ -1024,6 +1024,9 @@ textarea {
   .portfolio__content {
     align-items: center;
   }
+  .stage__time {
+    margin-bottom: var(--mb-1);
+  }
 
   .footer__container {
     grid-template-columns: repeat(3, 1fr);

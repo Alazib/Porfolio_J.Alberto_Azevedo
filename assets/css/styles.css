@@ -94,7 +94,6 @@ body.dark-theme {
 .change-theme {
   font-size: 1.25rem;
   color: var(--title-color);
-  margin-right: var(--mb-1);
   cursor: pointer;
 }
 
@@ -198,6 +197,7 @@ img {
 .nav__toggle {
   color: var(--title-color);
   font-weight: var(--font-medium);
+  margin-right: var(--mb-0-75);
 }
 
 .nav__logo:hover {

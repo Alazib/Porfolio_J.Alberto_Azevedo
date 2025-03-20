@@ -496,14 +496,18 @@ img {
   width: 100%;
 }
 
+.skills__java {
+  width: 80%;
+}
+
 .skills__react {
   width: 80%;
 }
 .skills__vue {
-  width: 70%;
+  width: 50%;
 }
 .skills__quasar {
-  width: 70%;
+  width: 50%;
 }
 .skills__typescript {
   width: 50%;
@@ -526,6 +530,14 @@ img {
   width: 50%;
 }
 .skills__mysql {
+  width: 100%;
+}
+
+.skills__disenoBBDD{
+  width: 100%;
+}
+
+.skills__php {
   width: 80%;
 }
 .skills__cypress {
